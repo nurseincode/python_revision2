@@ -1,3 +1,6 @@
+import time
+import asyncio
+
 # advanced functions
 # 1. Callbacks
 
@@ -12,13 +15,55 @@
 # doing_something(greet)
 
 
-def greet(name):
-    print(f'Hello, {name}!')
 
-def say_bye():
-    print('Goodbye!')
-   
 
-greet('Kare!')
-say_bye()
+
+# def task_one():
+#     print("Task one started")
+#     time.sleep(3)
+#     print("Task one finished")
+
+
+# def task_two():
+#     print("Task two started")
+#     time.sleep(2)
+#     print("Task two finished")
+
+
+# task_one()
+# task_two()
+
+
+
+
+
+# async def task_one():
+#     print("Task one started")
+#     await asyncio.sleep(3)
+#     print("Task one finished")
+
+
+# async def task_two():
+#     print("Task two started")
+#     await asyncio.sleep(2)
+#     print("Task two finished")
+
+
+# async def main():
+
+#     start = time.time()
+
+#     await asyncio.gather(
+#         task_one(),
+#         task_two()
+#     )
+
+#     end = time.time()
+
+#     print(f"Total time: {end - start:.2f} seconds")
+
+
+# asyncio.run(main())
+
+
 
