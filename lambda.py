@@ -18,27 +18,36 @@
 # calculate(lambda x, y: x + y)
 # calculate(lambda x, y: x * y)
 
-add = lambda x,y: x + y
-# is conceptually very similar to:
-# def add(x, y):
-#     return x + y
 
-# lambda = keyword
-# x , y = parameters
-# x + y = expression whose result is automatically returned
-# the lambda kw tells python to create a function here
-# so 
-# add = lambda x, y: x + y # creates a func & assigns that func to add
-# then add(3, 4) == 7
+
+# def doing_something(callback):
+#     print(f'Running first')
+#     callback()
+
+# # doing_something(greet)
+
+# # with callback
+# doing_something(lambda: print("Hello!"))
 
 
 
 
-def add(x, y):
-    print(add)
 
-add = lambda x, y: x + y
-add(3, 4)
+
+# add_this = lambda num: num + 10
+
+# print(add_this(5))
+
+def add_ten(num):
+    return num + 10
+
+
+add_this = lambda num: num + 10
+
+print(add_ten(5))
+print(add_this(5))
+
+
 
 
 
