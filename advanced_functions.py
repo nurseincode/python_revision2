@@ -14,6 +14,25 @@ import asyncio
 
 # doing_something(greet)
 
+def greet(name, cb):
+    print(f'Hello, {name}')
+    cb(name)
+
+def say_bye(name):
+    print('bye!')
+    
+
+def shout(name):
+    for i in range(5):
+        print('Goodbye!!!')
+    
+
+greet('Tim', say_bye)
+greet('Gee', shout)
+
+print('continuing main')
+
+# more statements
 
 
 

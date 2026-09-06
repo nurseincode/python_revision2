@@ -38,14 +38,14 @@
 
 # print(add_this(5))
 
+add_this = lambda num: num + 10
+print(add_this(5))
+
 def add_ten(num):
     return num + 10
 
-
-add_this = lambda num: num + 10
-
 print(add_ten(5))
-print(add_this(5))
+
 
 
 
