@@ -1,4 +1,5 @@
 # higher-order functions
+# Wrapper
 
 # def greet(name):
 #     print(f"Hello, {name}")
@@ -44,14 +45,39 @@
 # my_function = create_greeting()
 # my_function()
 
-def greet(name):
-    print(f'Hello, {name}')
+# def greet(name):
+#     print(f'Hello, {name}')
 
-def do_something(callback):
-    callback('Mary')
+# def do_something(callback):
+#     callback('Mary')
 
-do_something(greet)
+# do_something(greet)
 
+#  A list of numbers
+
+numbers = [10, 25, 30, 40]
+
+# def squares(nums):
+#     result = []
+#     for n in nums:
+#         result.append(n ** 2)
+
+def with_list(nums, cb):
+    result = []
+    for n in nums:
+        result.append(cb(n))
+
+    return result
+
+def square(n):
+    return n * n
+
+def cube(n):
+    return n ** 3
+
+# Main
+print(with_list(numbers, square))
+print(with_list(numbers, cube))
 
     
 
