@@ -62,6 +62,9 @@ numbers = [10, 25, 30, 40]
 #     for n in nums:
 #         result.append(n ** 2)
 
+# Builds a new list with the result of 
+# calling cb on each item in the list
+
 def with_list(nums, cb):
     result = []
     for n in nums:
@@ -79,8 +82,16 @@ def cube(n):
 print(with_list(numbers, square))
 print(with_list(numbers, cube))
 
+
+
     
 
+people = [
+    ("Mary", 30),
+    ("Tom", 20),
+    ("Alice", 25)
+]
 
+sorted(people, key=lambda person: person[1])
 
 
