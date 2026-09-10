@@ -65,33 +65,43 @@ numbers = [10, 25, 30, 40]
 # Builds a new list with the result of 
 # calling cb on each item in the list
 
-def with_list(nums, cb):
-    result = []
-    for n in nums:
-        result.append(cb(n))
+# def with_list(nums, cb):
+#     result = []
+#     for n in nums:
+#         result.append(cb(n))
 
-    return result
+#     return result
 
 def square(n):
     return n * n
 
 def cube(n):
     return n ** 3
-
 # Main
-print(with_list(numbers, square))
-print(with_list(numbers, cube))
+# print(with_list(numbers, square))
+# print(with_list(numbers, cube))
+
+
+# Map
+# print(list(map(square, numbers)))
+# print(list(map(cube, numbers)))
+
+# Lambda
+
+print(list(map(lambda x: x ** 2, numbers)))
 
 
 
     
 
-people = [
-    ("Mary", 30),
-    ("Tom", 20),
-    ("Alice", 25)
-]
+# people = [
+#     ("Mary", 30),
+#     ("Tom", 20),
+#     ("Alice", 25)
+# ]
 
-sorted(people, key=lambda person: person[1])
+# sorted(people, key=lambda person: person[1])
+
+
 
 
