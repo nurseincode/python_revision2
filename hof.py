@@ -72,11 +72,11 @@ numbers = [10, 25, 30, 40]
 
 #     return result
 
-def square(n):
-    return n * n
+# def square(n):
+#     return n * n
 
-def cube(n):
-    return n ** 3
+# def cube(n):
+#     return n ** 3
 # Main
 # print(with_list(numbers, square))
 # print(with_list(numbers, cube))
@@ -88,7 +88,7 @@ def cube(n):
 
 # Lambda
 
-print(list(map(lambda x: x ** 2, numbers)))
+# print(list(map(lambda x: x ** 2, numbers)))
 
 
 
@@ -102,6 +102,24 @@ print(list(map(lambda x: x ** 2, numbers)))
 
 # sorted(people, key=lambda person: person[1])
 
+# filter
 
+# numbers = [2, 3, 5, 8, 12, 7]
 
+# evens = filter(lambda x: x % 2 == 0, numbers)
+# print(list(evens))
+
+# or
+
+# print(list(filter(lambda x: x % 2 == 0, numbers)))
+
+# filter and map together
+
+numbers = [4, 7, 3, 8, 10]
+
+evens = filter(lambda x: x % 2 == 0, numbers)
+
+result = map(lambda x: x * 2, evens )
+
+print(list(result))
 
