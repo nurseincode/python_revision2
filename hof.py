@@ -113,13 +113,57 @@ numbers = [10, 25, 30, 40]
 
 # print(list(filter(lambda x: x % 2 == 0, numbers)))
 
+
 # filter and map together
 
-numbers = [4, 7, 3, 8, 10]
+# numbers = [4, 7, 3, 8, 10]
 
-evens = filter(lambda x: x % 2 == 0, numbers)
+# evens = filter(lambda x: x % 2 == 0, numbers)
 
-result = map(lambda x: x * 2, evens )
+# result = map(lambda x: x * 2, evens )
 
+# print(list(result))
+
+
+
+# using map to open a file called numbers.txt
+
+# - 4 
+# - 7 
+# - 3 
+
+# with open("numbers.txt") as file:
+#     result = map(int, file)
+#     print(list,(result)) 
+
+#     for number in result:
+#         print(number * 2)
+
+# you have a file called numbers.txt that contains 4, 2, 5, 6, 8
+
+
+
+# hof and cb 
+
+numbers = [1, 2, 3, 4]
+
+def double(x):
+    return x * 2
+
+
+result = map(double, numbers) # map is a hof bc it takes another func as an argument
 print(list(result))
+
+# hof returns another function
+
+def create_multiplier(x):
+
+    def multiply(number):
+        return number * x
+    return multiply
+
+double = create_multiplier(2)
+print(double(5))
+
+
 
