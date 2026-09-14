@@ -145,16 +145,16 @@ numbers = [10, 25, 30, 40]
 
 # hof and cb 
 
-numbers = [1, 2, 3, 4]
+# numbers = [1, 2, 3, 4]
 
-def double(x):
-    return x * 2
+# def double(x):
+#     return x * 2
 
 
-result = map(double, numbers) # map is a hof bc it takes another func as an argument
-print(list(result))
+# result = map(double, numbers) # map is a hof bc it takes another func as an argument
+# print(list(result))
 
-# hof returns another function
+# 2nd part of hof > returns another function , closure
 
 def create_multiplier(x):
 
